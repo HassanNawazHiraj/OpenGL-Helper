@@ -87,5 +87,15 @@ namespace OpenGL_helper
                 Button1_Click(null, null);
             }
         }
+
+        private void BrowseButton_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog o = new OpenFileDialog();
+            o.ShowDialog();
+            if(o.FileName != "")
+            {
+                filePathText.Text = o.FileName;
+            }
+        }
     }
 }

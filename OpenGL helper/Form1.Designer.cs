@@ -51,8 +51,11 @@
             this.OpenGLLeftText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.filePathText = new System.Windows.Forms.TextBox();
+            this.browseButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -287,14 +290,34 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.browseButton);
+            this.tabPage2.Controls.Add(this.filePathText);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(490, 210);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "ImageDots";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // filePathText
+            // 
+            this.filePathText.Enabled = false;
+            this.filePathText.Location = new System.Drawing.Point(5, 5);
+            this.filePathText.Name = "filePathText";
+            this.filePathText.Size = new System.Drawing.Size(399, 20);
+            this.filePathText.TabIndex = 0;
+            // 
+            // browseButton
+            // 
+            this.browseButton.Location = new System.Drawing.Point(410, 5);
+            this.browseButton.Name = "browseButton";
+            this.browseButton.Size = new System.Drawing.Size(75, 23);
+            this.browseButton.TabIndex = 1;
+            this.browseButton.Text = "Browse";
+            this.browseButton.UseVisualStyleBackColor = true;
+            this.browseButton.Click += new System.EventHandler(this.BrowseButton_Click);
             // 
             // Form1
             // 
@@ -309,6 +332,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -338,6 +363,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button browseButton;
+        private System.Windows.Forms.TextBox filePathText;
     }
 }
 
