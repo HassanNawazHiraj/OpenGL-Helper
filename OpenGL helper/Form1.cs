@@ -26,12 +26,49 @@ namespace OpenGL_helper
         {
             float oLeft = float.Parse(OpenGLLeftText.Text);
             float oRight = float.Parse(OpenGLRightText.Text);
-           // float oTop = float.Parse(OpenGLTopText.Text);
-            //float oBottom = float.Parse(OpenGLBottomText.Text);
+            float oTop = float.Parse(OpenGLTopText.Text);
+            float oBottom = float.Parse(OpenGLBottomText.Text);
 
             float oLeftPositive = oLeft * -1;
-            float offset = (oLeftPositive + oRight) / 2;
-            MessageBox.Show(offset+"");
+            float oBottomPositive = oBottom * -1;
+            float leftRightOffset = (oLeftPositive + oRight) / 2;
+            float bottomTopOffset = (oBottomPositive + oTop) / 2;
+            float oLeftRightTotal = oLeftPositive + oRight;
+            float oBottomTopTotal = oBottomPositive + oTop;
+
+            float mLeft = float.Parse(MapingLeftText.Text);
+            float mRight = float.Parse(MapingRightText.Text);
+            float mTop = float.Parse(MapingTopText.Text);
+            float mBottom = float.Parse(MapingBottomText.Text);
+
+            float mLeftRightMax = mRight - mLeft;
+            float mBottomTopMax = mBottom - mTop;
+
+
+            float iX = float.Parse(inX.Text);
+            float iY = float.Parse(inY.Text);
+
+            //getting %
+            float oXPercentage = (iX / mLeftRightMax);
+            float oYPercentage = (iY / mBottomTopMax);
+
+            float outX1 = oXPercentage * oLeftRightTotal;
+            float outX = outX1 - leftRightOffset;
+
+
+            float outY1 = oYPercentage * oBottomTopTotal;
+            float outY = outY1 - bottomTopOffset;
+
+            outXText.Text = outX + "";
+            outYText.Text = outY + "";
+            outXY.Text = outX + "," + outY;
+
+
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }
