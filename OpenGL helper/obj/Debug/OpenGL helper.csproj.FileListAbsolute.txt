@@ -1,0 +1,10 @@
+D:\work\uni\OpenGL helper\OpenGL helper\bin\Debug\OpenGL helper.exe.config
+D:\work\uni\OpenGL helper\OpenGL helper\bin\Debug\OpenGL helper.exe
+D:\work\uni\OpenGL helper\OpenGL helper\bin\Debug\OpenGL helper.pdb
+D:\work\uni\OpenGL helper\OpenGL helper\obj\Debug\OpenGL helper.csprojAssemblyReference.cache
+D:\work\uni\OpenGL helper\OpenGL helper\obj\Debug\OpenGL_helper.Form1.resources
+D:\work\uni\OpenGL helper\OpenGL helper\obj\Debug\OpenGL_helper.Properties.Resources.resources
+D:\work\uni\OpenGL helper\OpenGL helper\obj\Debug\OpenGL helper.csproj.GenerateResource.cache
+D:\work\uni\OpenGL helper\OpenGL helper\obj\Debug\OpenGL helper.csproj.CoreCompileInputs.cache
+D:\work\uni\OpenGL helper\OpenGL helper\obj\Debug\OpenGL helper.exe
+D:\work\uni\OpenGL helper\OpenGL helper\obj\Debug\OpenGL helper.pdb
