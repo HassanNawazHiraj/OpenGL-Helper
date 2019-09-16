@@ -60,7 +60,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(9, 10);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(498, 236);
@@ -89,9 +89,9 @@
             this.tabPage1.Controls.Add(this.OpenGLLeftText);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(490, 210);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Coordinates maping";
@@ -121,7 +121,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(374, 154);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(79, 34);
             this.button1.TabIndex = 19;
@@ -132,7 +132,7 @@
             // outXY
             // 
             this.outXY.Location = new System.Drawing.Point(312, 104);
-            this.outXY.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.outXY.Margin = new System.Windows.Forms.Padding(2);
             this.outXY.Name = "outXY";
             this.outXY.Size = new System.Drawing.Size(76, 20);
             this.outXY.TabIndex = 18;
@@ -140,7 +140,7 @@
             // outYText
             // 
             this.outYText.Location = new System.Drawing.Point(214, 104);
-            this.outYText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.outYText.Margin = new System.Windows.Forms.Padding(2);
             this.outYText.Name = "outYText";
             this.outYText.Size = new System.Drawing.Size(76, 20);
             this.outYText.TabIndex = 15;
@@ -148,7 +148,7 @@
             // outXText
             // 
             this.outXText.Location = new System.Drawing.Point(135, 104);
-            this.outXText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.outXText.Margin = new System.Windows.Forms.Padding(2);
             this.outXText.Name = "outXText";
             this.outXText.Size = new System.Drawing.Size(76, 20);
             this.outXText.TabIndex = 14;
@@ -166,20 +166,22 @@
             // inY
             // 
             this.inY.Location = new System.Drawing.Point(214, 76);
-            this.inY.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.inY.Margin = new System.Windows.Forms.Padding(2);
             this.inY.Name = "inY";
             this.inY.Size = new System.Drawing.Size(76, 20);
             this.inY.TabIndex = 12;
             this.inY.Text = "50";
+            this.inY.KeyDown += new System.Windows.Forms.KeyEventHandler(this.InY_KeyDown);
             // 
             // inX
             // 
             this.inX.Location = new System.Drawing.Point(135, 76);
-            this.inX.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.inX.Margin = new System.Windows.Forms.Padding(2);
             this.inX.Name = "inX";
             this.inX.Size = new System.Drawing.Size(76, 20);
             this.inX.TabIndex = 11;
             this.inX.Text = "50";
+            this.inX.KeyDown += new System.Windows.Forms.KeyEventHandler(this.InX_KeyDown);
             // 
             // label3
             // 
@@ -194,7 +196,7 @@
             // MapingTopText
             // 
             this.MapingTopText.Location = new System.Drawing.Point(374, 41);
-            this.MapingTopText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MapingTopText.Margin = new System.Windows.Forms.Padding(2);
             this.MapingTopText.Name = "MapingTopText";
             this.MapingTopText.Size = new System.Drawing.Size(76, 20);
             this.MapingTopText.TabIndex = 9;
@@ -203,7 +205,7 @@
             // MapingBottomText
             // 
             this.MapingBottomText.Location = new System.Drawing.Point(294, 41);
-            this.MapingBottomText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MapingBottomText.Margin = new System.Windows.Forms.Padding(2);
             this.MapingBottomText.Name = "MapingBottomText";
             this.MapingBottomText.Size = new System.Drawing.Size(76, 20);
             this.MapingBottomText.TabIndex = 8;
@@ -212,7 +214,7 @@
             // MapingRightText
             // 
             this.MapingRightText.Location = new System.Drawing.Point(214, 41);
-            this.MapingRightText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MapingRightText.Margin = new System.Windows.Forms.Padding(2);
             this.MapingRightText.Name = "MapingRightText";
             this.MapingRightText.Size = new System.Drawing.Size(76, 20);
             this.MapingRightText.TabIndex = 7;
@@ -221,7 +223,7 @@
             // MapingLeftText
             // 
             this.MapingLeftText.Location = new System.Drawing.Point(135, 41);
-            this.MapingLeftText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MapingLeftText.Margin = new System.Windows.Forms.Padding(2);
             this.MapingLeftText.Name = "MapingLeftText";
             this.MapingLeftText.Size = new System.Drawing.Size(76, 20);
             this.MapingLeftText.TabIndex = 6;
@@ -240,7 +242,7 @@
             // OpenGLTopText
             // 
             this.OpenGLTopText.Location = new System.Drawing.Point(374, 12);
-            this.OpenGLTopText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.OpenGLTopText.Margin = new System.Windows.Forms.Padding(2);
             this.OpenGLTopText.Name = "OpenGLTopText";
             this.OpenGLTopText.Size = new System.Drawing.Size(76, 20);
             this.OpenGLTopText.TabIndex = 4;
@@ -249,7 +251,7 @@
             // OpenGLBottomText
             // 
             this.OpenGLBottomText.Location = new System.Drawing.Point(294, 12);
-            this.OpenGLBottomText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.OpenGLBottomText.Margin = new System.Windows.Forms.Padding(2);
             this.OpenGLBottomText.Name = "OpenGLBottomText";
             this.OpenGLBottomText.Size = new System.Drawing.Size(76, 20);
             this.OpenGLBottomText.TabIndex = 3;
@@ -258,7 +260,7 @@
             // OpenGLRightText
             // 
             this.OpenGLRightText.Location = new System.Drawing.Point(214, 12);
-            this.OpenGLRightText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.OpenGLRightText.Margin = new System.Windows.Forms.Padding(2);
             this.OpenGLRightText.Name = "OpenGLRightText";
             this.OpenGLRightText.Size = new System.Drawing.Size(76, 20);
             this.OpenGLRightText.TabIndex = 2;
@@ -267,7 +269,7 @@
             // OpenGLLeftText
             // 
             this.OpenGLLeftText.Location = new System.Drawing.Point(135, 12);
-            this.OpenGLLeftText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.OpenGLLeftText.Margin = new System.Windows.Forms.Padding(2);
             this.OpenGLLeftText.Name = "OpenGLLeftText";
             this.OpenGLLeftText.Size = new System.Drawing.Size(76, 20);
             this.OpenGLLeftText.TabIndex = 1;
@@ -286,9 +288,9 @@
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(490, 210);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
@@ -300,7 +302,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(514, 253);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "OpenGL Helper";
             this.Load += new System.EventHandler(this.Form1_Load);

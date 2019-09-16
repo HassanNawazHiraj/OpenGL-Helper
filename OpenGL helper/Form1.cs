@@ -58,7 +58,7 @@ namespace OpenGL_helper
 
             float outY1 = oYPercentage * oBottomTopTotal;
             float outY = outY1 - bottomTopOffset;
-
+            outY = outY * -1;
             outXText.Text = outX + "";
             outYText.Text = outY + "";
             outXY.Text = outX + "," + outY;
@@ -70,6 +70,22 @@ namespace OpenGL_helper
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void InX_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode.Equals(Keys.Enter))
+            {
+                Button1_Click(null, null);
+            }
+        }
+
+        private void InY_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.Equals(Keys.Enter))
+            {
+                Button1_Click(null, null);
+            }
         }
     }
 }
