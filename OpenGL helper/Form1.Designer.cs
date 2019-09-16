@@ -53,6 +53,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.filePathText = new System.Windows.Forms.TextBox();
             this.browseButton = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -290,6 +291,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.browseButton);
             this.tabPage2.Controls.Add(this.filePathText);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -318,6 +320,16 @@
             this.browseButton.Text = "Browse";
             this.browseButton.UseVisualStyleBackColor = true;
             this.browseButton.Click += new System.EventHandler(this.BrowseButton_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(410, 43);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "read";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // Form1
             // 
@@ -365,6 +377,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button browseButton;
         private System.Windows.Forms.TextBox filePathText;
+        private System.Windows.Forms.Button button2;
     }
 }
 

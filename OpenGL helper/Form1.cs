@@ -97,5 +97,22 @@ namespace OpenGL_helper
                 filePathText.Text = o.FileName;
             }
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Bitmap img = new Bitmap(filePathText.Text);
+            for (int i = 0; i < img.Width; i++)
+            {
+                for (int j = 0; j < img.Height; j++)
+                {
+                    Color pixel = img.GetPixel(i, j);
+                    MessageBox.Show(pixel.R + "," + pixel.G + "," + pixel.B);
+                    //if (pixel == *somecondition *)
+                    //{
+                    //    **Store pixel here in a array or list or whatever**
+                    //}
+                }
+            }
+        }
     }
 }
