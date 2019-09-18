@@ -63,6 +63,11 @@ namespace OpenGL_helper
             outYText.Text = outY + "";
             outXY.Text = outX + "," + outY;
 
+            if(copyCheckBox.Checked)
+            {
+                Clipboard.SetText(outXY.Text);
+            }
+
 
 
         }

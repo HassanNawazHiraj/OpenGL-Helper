@@ -51,9 +51,10 @@
             this.OpenGLLeftText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.filePathText = new System.Windows.Forms.TextBox();
-            this.browseButton = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.browseButton = new System.Windows.Forms.Button();
+            this.filePathText = new System.Windows.Forms.TextBox();
+            this.copyCheckBox = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -72,6 +73,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.copyCheckBox);
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.button1);
@@ -300,8 +302,30 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(490, 210);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "ImageDots";
+            this.tabPage2.Text = "Image to coordinates";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Enabled = false;
+            this.button2.Location = new System.Drawing.Point(410, 43);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "read";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // browseButton
+            // 
+            this.browseButton.Enabled = false;
+            this.browseButton.Location = new System.Drawing.Point(410, 5);
+            this.browseButton.Name = "browseButton";
+            this.browseButton.Size = new System.Drawing.Size(75, 23);
+            this.browseButton.TabIndex = 1;
+            this.browseButton.Text = "Browse";
+            this.browseButton.UseVisualStyleBackColor = true;
+            this.browseButton.Click += new System.EventHandler(this.BrowseButton_Click);
             // 
             // filePathText
             // 
@@ -311,25 +335,15 @@
             this.filePathText.Size = new System.Drawing.Size(399, 20);
             this.filePathText.TabIndex = 0;
             // 
-            // browseButton
+            // copyCheckBox
             // 
-            this.browseButton.Location = new System.Drawing.Point(410, 5);
-            this.browseButton.Name = "browseButton";
-            this.browseButton.Size = new System.Drawing.Size(75, 23);
-            this.browseButton.TabIndex = 1;
-            this.browseButton.Text = "Browse";
-            this.browseButton.UseVisualStyleBackColor = true;
-            this.browseButton.Click += new System.EventHandler(this.BrowseButton_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(410, 43);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "read";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.copyCheckBox.AutoSize = true;
+            this.copyCheckBox.Location = new System.Drawing.Point(18, 164);
+            this.copyCheckBox.Name = "copyCheckBox";
+            this.copyCheckBox.Size = new System.Drawing.Size(189, 17);
+            this.copyCheckBox.TabIndex = 22;
+            this.copyCheckBox.Text = "Copy calculated value to clipboard";
+            this.copyCheckBox.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -378,6 +392,7 @@
         private System.Windows.Forms.Button browseButton;
         private System.Windows.Forms.TextBox filePathText;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox copyCheckBox;
     }
 }
 
